@@ -1,0 +1,22 @@
+{
+  "name": "@coglite/common",
+  "description": "Shared components",
+  "version": "0.0.1",
+  "author": "c",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@material-ui/core": "4.11.2",
+    "@material-ui/icons": "4.11.2",
+    "@material-ui/styles": "4.11.2",
+    "classnames": "2.2.6",
+    "history": "5.0.0",
+    "mobx": "6.0.4",
+    "mobx-react": "7.0.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "tslib": "2.0.3"
+  },
+  "devDependencies": {}
+}

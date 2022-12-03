@@ -1,0 +1,37 @@
+{
+  "name": "monorepo-starterkit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React monorepo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myorg/mymonorepo.git"
+  },
+  "license": "MIT",
+  "author": "Jeremy Coleman",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently npm:watch:*",
+    "watch:rollups": "rollup -c rollup.bundles.js -w",
+    "prettify": "pprettier --write packages/*/src/**/{*.js,*.jsx,*.ts,*.tsx}",
+    "updeps": "lerna exec npx upd --stream --parallel",
+    "uninstall": "rimraf node_modules && rimraf packages/*/node_modules"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@rollup/pluginutils": "5.0.2",
+    "@types/node": "latest",
+    "concurrently": "7.6.0",
+    "rollup": "3.4.0",
+    "typescript": "4.8.x",
+    "resolve": "1.22.1"
+  }
+}
