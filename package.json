@@ -31,7 +31,7 @@
     "@types/node": "latest",
     "concurrently": "7.6.0",
     "rollup": "3.4.0",
-    "typescript": "4.8.x",
+    "typescript": "4.9.4",
     "resolve": "1.22.1"
   }
 }

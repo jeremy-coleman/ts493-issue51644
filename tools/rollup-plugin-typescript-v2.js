@@ -93,7 +93,8 @@ var resolveHost = {
     } catch (err) {
       return false;
     }
-  }
+  },
+  readFile: () => {}
 };
 
 var TSLIB_ID = '\0tslib';
